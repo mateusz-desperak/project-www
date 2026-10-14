@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Nasza kawiarnia</title>
- <meta name="description" content="Student project website - HTML skeleton">
- <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
- <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nasza kawiarnia</title>
+    <meta name="description" content="Student project website - HTML skeleton">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+<!-- google fonts -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Stoke:wght@300;400&display=swap');
+</style> 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Stoke:wght@300;400&display=swap');
+</style>
+
+</head>
+
+<body>
     <header class="site-header">
-        <div class="logo">
-            <a href="index.html">Nasza Kawiarnia</a>
-        </div>
+        
+
+        <a href="index.html">
+            <h2>Nasza Kawiarnia</h2>
+        </a>
+        <a href="index.html">
+            <img src="img/favicon.svg" alt="Ikona kawy" class="logo">
+        </a>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html" class="active">Strona główna</a></li>
@@ -21,6 +35,7 @@
                 <li><a href="oferta.html">Oferta</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="rezerwacja.html">Rezerwacja</a></li>
+
             </ul>
         </nav>
     </header>
@@ -48,27 +63,30 @@
             </div>
         </section>
     </main>
-<footer class="site-footer">
-    <p>&copy; 2026 Nasza kawiarnia. Wszelkie prawa zastrzeżone.</p>
-    <div class="footer-contact">
-        <span>ul. Kawowa 5, Miasto</span> | <span>Tel: 123 456 789</span>
-    </div>
-<div class="social-icons">
-    <p>Odwiedź nas także na:</p>
-    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-        <svg width="200" height="200" viewBox="0 0 30 30" fill="currentColor">
-            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"/>
-        </svg>
-    </a>
+    <footer class="site-footer">
+        <p>&copy; 2026 Nasza kawiarnia. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer-contact">
+            <span>ul. Kawowa 5, Miasto</span> | <span>Tel: 123 456 789</span>
+        </div>
+        <div class="social-icons">
+            <p>Odwiedź nas także na:</p>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" id="fb">
+                <svg width="200" height="200" viewBox="0 0 30 30" fill="currentColor">
+                    <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+            </a>
 
-    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-        <svg width="200" height="200" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
-    </a>
-</div>
-</footer>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" id="ig">
+                <svg width="200" height="200" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
