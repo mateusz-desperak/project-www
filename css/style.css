@@ -318,8 +318,19 @@ footer {
         font-size: 48px;
     }
 
+
+    .main-nav {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
     .features {
-        width: 100%;
+        width: 95%;
         padding: 30px;
         grid-template-columns: repeat(3, 1fr);
     }
