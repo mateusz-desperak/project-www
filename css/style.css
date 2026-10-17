@@ -29,11 +29,24 @@ header h2 {
  
 }
 
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #FFF;
+}
+
 .main-nav {
+    display: none;
+    width: 100%;
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
+}
+
+.main-nav.active {
+    display: block;
 }
 
 .main-nav ul {
@@ -299,7 +312,22 @@ footer {
         align-items: center;
     }
 
+    .hamburger {
+        display: none;
+    }
 
+    .main-nav {
+        display: block;
+        width: auto;
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+          gap: 15px;
+    }
 
     .reservation-form {
         max-width: 600px;
