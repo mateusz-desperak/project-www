@@ -234,6 +234,18 @@ header h2 {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
+.error {
+ display: block;
+ margin-top: 4px;
+ color: #B00020;
+ font-size: 0.95rem;
+}
+
+.input-error {
+ border: 2px solid #B00020 !important;
+}
+
+
 .btn-submit {
     display: block;
     width: 100%;
@@ -367,8 +379,8 @@ footer {
         position: sticky;
         top: 0;
         z-index: 1000;
-        backdrop-filter: blur(40px);
-        -webkit-backdrop-filter: blur(40px);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     header h2 {

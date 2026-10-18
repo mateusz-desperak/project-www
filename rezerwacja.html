@@ -15,6 +15,7 @@
 <body>
 
     <header class="site-header">
+        <div id="live-clock" class="clock"></div>
         <a href="index.html">
             <h2>Nasza Kawiarnia</h2>
         </a>
@@ -37,31 +38,36 @@
     <main>
         <section class="content-section">
             <h1>Zarezerwuj stolik</h1>
-            <form action="" method="POST" class="reservation-form">
+            <form action="" method="POST" class="reservation-form" novalidate>
                 
                 <div class="form-group">
                     <label for="name">Imię i nazwisko:</label>
                     <input type="text" id="name" name="name" required minlength="3">
+                    <small class="error" id="err-name"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Adres e-mail:</label>
                     <input type="email" id="email" name="email" required>
+                    <small class="error" id="err-email"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="date">Data rezerwacji:</label>
                     <input type="date" id="date" name="date" required>
+                    <small class="error" id="err-date"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="time">Godzina:</label>
                     <input type="time" id="time" name="time" required>
+                    <small class="error" id="err-time"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="guests">Liczba osób:</label>
                     <input type="number" id="guests" name="guests" min="1" max="10" value="2" required>
+                    <small class="error" id="err-guests"></small>
                 </div>
 
                 <div class="form-group">
@@ -72,12 +78,14 @@
                         <option value="garden">W ogródku</option>
                         <option value="standard">Standardowy w sali</option>
                     </select>
+                    <small class="error" id="err-table-type"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="notes">Uwagi do rezerwacji (opcjonalnie):</label>
                     <br>
                     <textarea id="notes" name="notes" rows="4" placeholder="Np. krzesełko dla dziecka, alergie pokarmowe..."></textarea>
+                    <small class="error" id="err-notes"></small>
                 </div>
 
                 <button type="submit" class="btn-submit">Potwierdź rezerwację</button>
@@ -107,6 +115,6 @@
     </a>
 </div>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
