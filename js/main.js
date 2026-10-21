@@ -103,14 +103,26 @@ if (form) {
             ok = false;
         }
 
-        if (date === "") {
+        if (date == "") {
             errDate.textContent = "Proszę wybrać datę rezerwacji.";
             dateInput.classList.add("input-error");
             ok = false;
         }
 
-        if (time === "") {
+        if (date <= new Date().toISOString().split("T")[0] && ti) {
+            errDate.textContent = "Data rezerwacji nie może być wcześniejsza niż jutrzejsza.";
+            dateInput.classList.add("input-error");
+            ok = false;
+        }
+
+        if (time == "") {
             errTime.textContent = "Proszę wybrać godzinę rezerwacji.";
+            timeInput.classList.add("input-error");
+            ok = false;
+        }
+
+        if (time < "9:00" || time > "21:00") {
+            errTime.textContent = "Godzina rezerwacji musi być w przedziale od 9:00 do 21:00.";
             timeInput.classList.add("input-error");
             ok = false;
         }
@@ -121,7 +133,7 @@ if (form) {
             ok = false;
         }
 
-        if (tableType === "") {
+        if (tableType == "") {
             errTableType.textContent = "Proszę wybrać rodzaj stolika.";
             tableTypeInput.classList.add("input-error");
             ok = false;
