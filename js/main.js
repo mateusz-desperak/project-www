@@ -1,3 +1,5 @@
+//menu
+
 const yearSpan = document.querySelector("#year");
 if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
@@ -14,6 +16,10 @@ hamburgerBtn.addEventListener('click', (event) => {
 document.addEventListener('click', () => {
     mainNav.classList.remove('active');
 });
+
+
+
+// clock
 
 function updateClock() {
     const now = new Date();
@@ -33,8 +39,9 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
-
+// chceck form
 const form = document.querySelector(".reservation-form");
+
 
 if (form) {
     const nameInput = document.querySelector("#name");
@@ -51,34 +58,20 @@ if (form) {
     const errGuests = document.querySelector("#err-guests");
     const errTableType = document.querySelector("#err-table-type");
 
-    nameInput.addEventListener("input", () => {
-        errName.textContent = "";
-        nameInput.classList.remove("input-error");
-    });
+    const formFields = [
+        { input: nameInput, err: errName },
+        { input: emailInput, err: errEmail },
+        { input: dateInput, err: errDate },
+        { input: timeInput, err: errTime },
+        { input: guestsInput, err: errGuests },
+        { input: tableTypeInput, err: errTableType }
+    ];
 
-    emailInput.addEventListener("input", () => {
-        errEmail.textContent = "";
-        emailInput.classList.remove("input-error");
-    });
-
-    dateInput.addEventListener("input", () => {
-        errDate.textContent = "";
-        dateInput.classList.remove("input-error");
-    });
-
-    timeInput.addEventListener("input", () => {
-        errTime.textContent = "";
-        timeInput.classList.remove("input-error");
-    });
-
-    guestsInput.addEventListener("input", () => {
-        errGuests.textContent = "";
-        guestsInput.classList.remove("input-error");
-    });
-
-    tableTypeInput.addEventListener("change", () => {
-        errTableType.textContent = "";
-        tableTypeInput.classList.remove("input-error");
+    formFields.forEach(item => {
+        item.input.addEventListener("input", () => {
+            item.err.textContent = "";
+            item.input.classList.remove("input-error");
+        });
     });
 
     form.addEventListener("submit", (event) => {
@@ -107,10 +100,10 @@ if (form) {
             errDate.textContent = "Proszę wybrać datę rezerwacji.";
             dateInput.classList.add("input-error");
             ok = false;
-        }
-
-        if (date <= new Date().toISOString().split("T")[0] && ti) {
-            errDate.textContent = "Data rezerwacji nie może być wcześniejsza niż jutrzejsza.";
+        } 
+        
+        else if (date < new Date().toISOString().split("T")[0]) {
+            errDate.textContent = "Data rezerwacji nie może być wcześniejsza niż dzisiejsza.";
             dateInput.classList.add("input-error");
             ok = false;
         }
@@ -121,7 +114,7 @@ if (form) {
             ok = false;
         }
 
-        if (time < "9:00" || time > "21:00") {
+        else if (time < "9:00" || time > "21:00") {
             errTime.textContent = "Godzina rezerwacji musi być w przedziale od 9:00 do 21:00.";
             timeInput.classList.add("input-error");
             ok = false;
@@ -144,3 +137,13 @@ if (form) {
         }
     });
 }
+
+const faq = document.querySelector("#faq-toggle");
+const faqList = document.querySelector("#faq-list");
+
+if (faq && faqList) {
+    faq.addEventListener("click", () => {
+        faqList.classList.toggle("show");
+    });
+}
+

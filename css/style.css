@@ -80,19 +80,19 @@ header h2 {
     color: #333;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.4s ease, transform 0.4s ease;
 }
 
 .main-nav a:hover {
     color: #a16b05;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .main-nav .active {
     font-weight: bold;
     color: #a16b05;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .main-nav li {
@@ -296,6 +296,52 @@ header h2 {
 .gallery-grid img:hover {
     transform: scale(1.03);
 }
+
+.faq {
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #ffeaaf;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', serif;
+}
+
+#faq-toggle {
+    display: block;
+    width: 20%;
+    padding: 14px;
+    background-color:#a16b05 ;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#faq-toggle:hover{
+    background-color: #6b4b10;
+}
+
+#faq-list {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 24px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.4s ease-in-out;
+}
+
+
+#faq-list.show {
+    max-height: 300px;
+    opacity: 1;
+    padding: 20px;
+}
+
+
+
 
 footer {
     background-color: #ffeaaf;
