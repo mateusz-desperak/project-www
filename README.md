@@ -14,9 +14,11 @@ This project was developed as part of an academic course at university.
 - Mateusz Desperak – frontend architecture, UI/UX design, implementation of modular JavaScript structure, and API integration.
 
 ## Technology
-HTML5
-CSS#
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySql
 
 ## Version
 v1.0 - 2026
