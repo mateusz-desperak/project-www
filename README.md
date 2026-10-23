@@ -21,20 +21,6 @@ JavaScript
 ## Version
 v1.0 - 2026
 
-## Project Structure
-project-www/
-├── index.html 
-├── news.html
-├── offer.html
-├── contact.html
-├── css/
-│   └── style.css
-└── js/
-    ├── main.js
-    ├── ui.js
-    ├── form.js
-    └── api.js
-
 ## How to run
 1. Open the project folder in VS Code.
 2. Make sure you have the Live Server extension installed.
