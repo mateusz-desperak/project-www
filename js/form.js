@@ -61,22 +61,33 @@ if (form) {
             ok = false;
         }
 
-        else if (date < new Date().toISOString().split("T")[0]) {
-            errDate.textContent = "Data rezerwacji nie może być wcześniejsza niż dzisiejsza.";
+        else if (date <= new Date().toISOString().split("T")[0]) {
+            errDate.textContent = "Data rezerwacji nie może być wcześniejsza niż jutrzejsza.";
             dateInput.classList.add("input-error");
             ok = false;
         }
 
-        if (time == "") {
+        function timeToMinutes(timeStr) {
+            const [hours, minutes] = timeStr.split(":").map(Number);
+            return hours * 60 + minutes;
+        }
+
+        const openingTime = timeToMinutes("09:00"); 
+        const closingTime = timeToMinutes("21:00");
+        const userTime = timeToMinutes(time);
+
+        if (time === "") {
             errTime.textContent = "Proszę wybrać godzinę rezerwacji.";
             timeInput.classList.add("input-error");
             ok = false;
-        }
-
-        else if (time < "9:00" || time > "21:00") {
-            errTime.textContent = "Godzina rezerwacji musi być w przedziale od 9:00 do 21:00.";
+        } 
+        else if (userTime < openingTime || userTime > closingTime) {
+            errTime.textContent = "Godzina rezerwacji musi być w przedziale od 09:00 do 21:00.";
             timeInput.classList.add("input-error");
             ok = false;
+        } else {
+            timeInput.classList.remove("input-error");
+            errTime.textContent = "";
         }
 
         if (guests < 1 || guests > 10) {
