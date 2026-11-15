@@ -24,6 +24,7 @@ This project was developed as part of an academic course at university.
 v1.0 - 2026
 
 ## How to run
-1. Open the project folder in VS Code.
-2. Make sure you have the Live Server extension installed.
-3. Right-click on index.html and select "Open with Live Server".
+1. Clone or copy the project folder into your local XAMPP `htdocs` directory (`C:\xampp\htdocs\projekt-www`).
+2. Start **Apache** and **MySQL** modules in the XAMPP Control Panel.
+3. Import the database schema (if applicable) into your local MySQL via phpMyAdmin.
+4. Open your browser and navigate to: `http://localhost/projekt-www/index.html` (or use your configured `.htaccess` friendly URLs).
