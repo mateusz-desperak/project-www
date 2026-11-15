@@ -11,34 +11,31 @@
 
   gtag('config', 'G-WT0YJCQ0CT');
 </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Kontakt – Nasza Kawiarnia, Częstochowa</title>
-    <meta name="description" content="Kontakt z naszą kawiarnią w Częstochowie. Napisz do nas jak masz jakieś pytania!">
+    <title>O naszej kawiarni w Częstochowie | Nasza kawiarnia</title>
+    <meta name="description" content="Poznaj naszą kawiarnię w Częstochowie. Dowiedz się o nas i o wyjątkowej atmosferze, która czeka na Ciebie.">
     <meta name="keywords" content="kawiarnia, kawiarnie, Częstochowa, kawa, ciasto, desery">
 
-    <meta property="og:title" content="Kontakt – Nasza Kawiarnia, Częstochowa">
-    <meta property="og:description" content="Kontakt z naszą kawiarnią w Częstochowie. Napisz do nas jak masz jakieś pytania!">
-    <meta property="og:image" content="https://projekt-www-delta.vercel.app/img/zdjecie-kawiarni.png">
-    <meta property="og:url" content="https://projekt-www-delta.vercel.app/kontakt.html">
+    <meta property="og:title" content="O naszej kawiarni w Częstochowie | Nasza kawiarnia">
+    <meta property="og:description" content="Poznaj naszą kawiarnię w Częstochowie. Dowiedz się o nas i o wyjątkowej atmosferze, która czeka na Ciebie.">
+    <meta property="og:image" content="https://projekt-www-delta.vercel.app/img/photo.png">
+    <meta property="og:url" content="https://projekt-www-delta.vercel.app/o-nas.html">
     <meta property="og:type" content="website">
-
-    <meta name="description" content="Student project website">
+    
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
 <!-- google fonts -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Stoke:wght@300;400&display=swap');
 </style> 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Stoke:wght@300;400&display=swap');
-</style>
+
 
 </head>
 
 <body>
+
     <header class="site-header">
         <div id="live-clock" class="clock"></div>
 
@@ -54,26 +51,24 @@
         <nav class="main-nav" id="main-nav">
             <ul>
                     <a href="nasza-kawiarnia">Strona główna</a>
-                    <a href="poznaj-nas">O nas</a>
+                    <a href="poznaj-nas" class="active">O nas</a>
                     <a href="zobacz-oferte">Oferta</a>
                     <a href="zobacz-galerie">Galeria</a>
                     <a href="zarezerwuj-stolik">Rezerwacja</a>
                     <a href="zobacz-nowosci">News</a>
-                    <a href="napisz-do-nas" class="active">Kontakt</a>
+                    <a href="napisz-do-nas">Kontakt</a>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="content-section">
-            <form action="save_message.php" method="POST" class="form-contact">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" required minlength="3">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required minlength="10"></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <h2>Kim jesteśmy?</h2>
+            <p>„Wszystko zaczęło się od małego ekspresu w domowej kuchni i niezliczonych godzin eksperymentów z różnymi rodzajami ziaren. Z czasem miłość do parzenia dobrej kawy przestała mieszkać w domu i zapragnęliśmy podzielić się nią z innymi. Tak zrodził się pomysł na miejsce, które połączy sąsiadów, przechodniów i każdego, kto szuka chwili wytchnienia.</p>
+                
+            <p>
+            Krok po kroku, własnymi rękami, urządziliśmy wnętrze tak, by było w nim ciepło i przytulnie – bez chłodnego designu, za to z wygodnymi fotelami i zapachem świeżo mielonej kawy. Dzisiaj tworzymy zgrany zespół, który codziennie rzuca wszystko, by parzyć kawę tak, jak sami lubimy najbardziej: z pasją, uwagą i bez pośpiechu.”
+        </p>
         </section>
     </main>
 
@@ -106,4 +101,5 @@
 <script src="js/api.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
+
 </html>

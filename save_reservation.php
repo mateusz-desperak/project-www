@@ -69,7 +69,7 @@ try {
 
 	echo "<h1>Gotowe!</h1>";
 	echo "<p>Rezerwacja została zapisana.</p>";
-	echo "<p><a href='rezerwacja.html'>Wróć do formularza</a></p>";
+	echo "<p><a href='reservation.html'>Wróć do formularza</a></p>";
 } catch (PDOException $exception) {
 	http_response_code(500);
 	echo "<h1>Błąd</h1>";

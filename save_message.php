@@ -34,7 +34,7 @@ try {
     $stmt->execute([$name, $email, $message]);
     echo "<h1>Success</h1>";
     echo "<p>Message saved.</p>";
-    echo "<p><a href='kontakt.html'>Back to contact</a></p>";
+    echo "<p><a href='contact.html'>Back to contact</a></p>";
 } catch (Exception $ex) {
     echo "<h1>Error</h1>";
     echo "<p>Database error.</p>";
