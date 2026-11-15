@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/nasza-kawiarnia", "destination": "/index.html" },
+    { "source": "/poznaj-nas", "destination": "/o-nas.html" },
+    { "source": "/zobacz-oferte", "destination": "/oferta.html" },
+    { "source": "/zobacz-galerie", "destination": "/galeria.html" },
+    { "source": "/zarezerwuj-stolik", "destination": "/rezerwacja.html" },
+    { "source": "/napisz-do-nas", "destination": "/kontakt.html" },
+    { "source": "/zobacz-nowosci", "destination": "/news.html" }
+  ]
+}
