@@ -1,0 +1,11 @@
+RewriteEngine On
+Options -Indexes
+AddDefaultCharset UTF-8
+
+RewriteRule ^nasza-kawiarnia$ index.html [L]
+RewriteRule ^poznaj-nas$ o-nas.html [L]
+RewriteRule ^zobacz-oferte$ oferta.html [L]
+RewriteRule ^zobacz-galerie$ galeria.html [L]
+RewriteRule ^zarezerwuj-stolik$ rezerwacja.html [L]
+RewriteRule ^napisz-do-nas$ kontakt.html [L]
+RewriteRule ^zobacz-nowosci$ news.html [L]
