@@ -16,6 +16,7 @@
     <title>Zarezerwuj u nas stolik! | Nasza Kawiarnia</title>
     <meta name="description" content="Zarezerwuj stolik w naszej kawiarni w Częstochowie. Wybierz datę, godzinę i rodzaj stolika, aby zapewnić sobie miejsce w naszej przytulnej kawiarni.">
     <meta name="keywords" content="kawiarnia, kawiarnie, Częstochowa, kawa, ciasto, desery, rezerwacja, stolik">
+    
     <meta property="og:title" content="Zarezerwuj u nas stolik! | Nasza Kawiarnia">
     <meta property="og:description" content="Zarezerwuj stolik w naszej kawiarni w Częstochowie. Wybierz datę, godzinę i rodzaj stolika, aby zapewnić sobie miejsce w naszej przytulnej kawiarni.">
     <meta property="og:image" content="https://projekt-www-delta.vercel.app/img/zdjecie-kawiarni.png">
