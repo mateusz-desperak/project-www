@@ -32,4 +32,4 @@ v1.1.0 - 2026
 3. Import the database schema (if applicable) into your local MySQL via phpMyAdmin.
 4. Open your browser and navigate to: `http://localhost/projekt-www/index.html` (or use your configured `.htaccess` friendly URLs).
 
-> o systems were harmed during the development of this software.
+> No systems were harmed during the development of this software.
