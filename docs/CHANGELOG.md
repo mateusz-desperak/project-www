@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-11-17
+### Added
+- Add schema.org optimization
+
 ## [1.1.1] - 2026-11-15
 ### Fixed
 - General code cleanup
