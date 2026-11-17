@@ -22,7 +22,7 @@ This project was developed as part of an academic course at university.
 
 
 ## Version
-v1.1.1 - 2026
+v1.2.0 - 2026
 
 ## [Demo](https://projekt-www-delta.vercel.app) (Unfortunately PHP and MySql doesn't work here. Sorry)
 
